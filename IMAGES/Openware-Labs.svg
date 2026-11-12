@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   width="275"
+   height="275"
+   id="svg2"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient1">
+      <stop
+         style="stop-color:#0000ff;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#000080;stop-opacity:1"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient21">
+      <stop
+         style="stop-color:#00fbfe;stop-opacity:1;"
+         offset="0"
+         id="stop21" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop22" />
+    </linearGradient>
+    <rect
+       x="80.097087"
+       y="115.87379"
+       width="19.223301"
+       height="23.495146"
+       id="rect17" />
+    <linearGradient
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="47.650375"
+       y1="-11.410818"
+       x2="-42.021881"
+       y2="141.81557"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <text
+     xml:space="preserve"
+     style="writing-mode:lr-tb;direction:ltr;fill:#000000"
+     x="60.339806"
+     y="132.42719"
+     id="text9"><tspan
+       id="tspan9"
+       x="60.339806"
+       y="132.42719" /></text>
+  <text
+     xml:space="preserve"
+     id="text17"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Monospace;-inkscape-font-specification:Monospace;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect17);display:inline;fill:#ffffff" />
+  <path
+     style="fill:url(#linearGradient2);stroke:#000000;stroke-width:2.969;stroke-linecap:square;fill-opacity:1"
+     id="path1"
+     d="M 140.61855,75.41237 67.581209,121.6497 -18.472535,129.84097 -21.996563,43.470115 13.936456,-35.150252 90.497827,4.9832796 Z"
+     transform="matrix(1.302567,0,0,1.302567,59.83941,76.100468)" />
+  <text
+     xml:space="preserve"
+     style="font-size:42.6667px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';writing-mode:lr-tb;direction:ltr;fill:#ffffff;stroke:#000000;stroke-width:2.969;stroke-linecap:square"
+     x="39.123707"
+     y="161.59795"
+     id="text2"><tspan
+       id="tspan2"
+       x="39.123707"
+       y="161.59795">Openware</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:42.6667px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';writing-mode:lr-tb;direction:ltr;fill:#ffffff;stroke:#000000;stroke-width:2.969;stroke-linecap:square"
+     x="42.525772"
+     y="202.42268"
+     id="text3"><tspan
+       id="tspan3"
+       x="42.525772"
+       y="202.42268">Labs</tspan></text>
+</svg>
