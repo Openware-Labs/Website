@@ -11,7 +11,7 @@ PROJECTS
 
 - VPort
 
-- YComp
+- XDE
 
 SOURCE CODE
 
