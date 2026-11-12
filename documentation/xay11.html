@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xay11 Documentation — Xylum Foundation</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <script src="/components/Header.js" defer></script>
+  <script src="/components/Footer.js" defer></script>
+</head>
+<body>
+  <xylum-header></xylum-header>
+  <main>
+    <div style="margin-bottom: 2rem;">
+      <a href="/documentation.html" style="color: var(--accent-color); text-decoration: none;">&larr; Back to Documentation</a>
+    </div>
+
+    <h1>Xay11 Documentation</h1>
+    <p>Technical documentation for the Wayland-on-X11 compatibility layer.</p>
+
+    <div class="release-note" style="margin-top: 2rem;">
+      <div class="release-header">
+        <h2>Work in Progress</h2>
+      </div>
+      <p>Xay11 is currently in the planning and research phase. The APIs and architecture described here are subject to change.</p>
+    </div>
+
+    <h2>Concept</h2>
+    <p>Xay11 aims to provide a bridge that allows Wayland clients to connect to an X11 display server. It will act similarly to how Xwayland works, but in reverse.</p>
+    <p>Instead of an X11 server running inside a Wayland compositor, a Wayland compositor's core logic will be adapted to act as a client of Xylum.</p>
+
+    <h2>Built on YComp</h2>
+    <p>The rendering pipeline, surface management, and protocol parsing for Xay11 will be derived from YComp, the experimental Wayland compositor developed by the foundation.</p>
+    <p>This code reuse ensures that we don't reinvent the wheel and can leverage years of testing from the Y.Org project.</p>
+
+    <h2>Roadmap</h2>
+    <ul style="color: var(--text-muted); margin-left: 1.5rem; margin-bottom: 2rem;">
+      <li>[ ] Port YComp's Wayland protocol handling to the Xay11 architecture.</li>
+      <li>[ ] Implement the X11-side IPC and window management.</li>
+      <li>[ ] Test with native Wayland applications (e.g., <code>weston-terminal</code>, GTK4 apps).</li>
+    </ul>
+  </main>
+  <xylum-footer></xylum-footer>
+</body>
+</html>

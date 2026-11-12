@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
+  <url>
+    <loc>https://xylum-foundation.vercel.app/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://xylum-foundation.vercel.app/projects</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://xylum-foundation.vercel.app/documentation</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xylum-foundation.vercel.app/releases</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xylum-foundation.vercel.app/about</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Documentation Pages -->
+  <url>
+    <loc>https://xylum-foundation.vercel.app/documentation/xylum</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://xylum-foundation.vercel.app/documentation/xay11</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Releases Pages -->
+  <url>
+    <loc>https://xylum-foundation.vercel.app/releases/xylum</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://xylum-foundation.vercel.app/releases/xay11</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- About Pages -->
+  <url>
+    <loc>https://xylum-foundation.vercel.app/about/xylum</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://xylum-foundation.vercel.app/about/xay11</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.6</priority>
+  </url>
+</urlset>

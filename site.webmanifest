@@ -1,0 +1,17 @@
+{
+  "name": "Xylum Foundation",
+  "short_name": "Xylum",
+  "description": "Building the Future of Linux Graphics.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0055ff",
+  "icons": [
+    {
+      "src": "/icons/Xylum-D.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

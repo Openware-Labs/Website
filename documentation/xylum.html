@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xylum Documentation — Xylum Foundation</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <script src="/components/Header.js" defer></script>
+  <script src="/components/Footer.js" defer></script>
+</head>
+<body>
+  <xylum-header></xylum-header>
+  <main>
+    <div style="margin-bottom: 2rem;">
+      <a href="/documentation.html" style="color: var(--accent-color); text-decoration: none;">&larr; Back to Documentation</a>
+    </div>
+
+    <h1>Xylum Documentation</h1>
+    <p>Everything you need to build, run, and understand the Xylum X11 display server.</p>
+
+    <h2>1. Prerequisites</h2>
+    <p>Before building Xylum, ensure you have:</p>
+    <ul style="color: var(--text-muted); margin-left: 1.5rem; margin-bottom: 2rem;">
+      <li>Rust (Edition 2024) installed via <code>rustup</code>.</li>
+      <li>A Linux environment.</li>
+      <li><code>xauth</code> installed (for generating security cookies).</li>
+    </ul>
+
+    <h2>2. Building</h2>
+    <p>Clone the repository and build the workspace in release mode:</p>
+    <pre><code>git clone https://github.com/Xylum-Foundation/Xylum.git
+cd Xylum
+cargo build --release</code></pre>
+
+    <h2>3. Running Xylum</h2>
+    <p>Xylum uses MIT-MAGIC-COOKIE-1 for authentication. You need to generate a cookie for the display you plan to use (e.g., <code>:2</code>):</p>
+    <pre><code>xauth add :2 . $(mcookie)</code></pre>
+    <p>Then, start the server:</p>
+    <pre><code>cargo run --release -p xylum-server</code></pre>
+    <p>By default, Xylum listens on <code>/tmp/.X11-unix/X2</code> (Display <code>:2</code>).</p>
+
+    <h2>4. Running Applications</h2>
+    <p>In a separate terminal, launch any classic X11 application by pointing it to the Xylum display:</p>
+    <pre><code>DISPLAY=:2 xeyes
+DISPLAY=:2 xterm
+DISPLAY=:2 xcalc</code></pre>
+
+    <h2>Architecture Overview</h2>
+    <p>Xylum is designed with modularity in mind:</p>
+    <ul style="color: var(--text-muted); margin-left: 1.5rem; margin-bottom: 2rem;">
+      <li><strong>xylum-protocol:</strong> Handles the low-level X11 wire protocol (encoding/decoding requests and replies).</li>
+      <li><strong>xylum-auth:</strong> Manages MIT-MAGIC-COOKIE-1 authentication.</li>
+      <li><strong>xylum-server:</strong> The core server loop, state management, and dispatcher.</li>
+    </ul>
+    <p>For a deeper dive into the code structure, check out the <a href="https://github.com/Xylum-Foundation/Xylum" style="color: var(--accent-color);">GitHub repository</a>.</p>
+  </main>
+  <xylum-footer></xylum-footer>
+</body>
+</html>

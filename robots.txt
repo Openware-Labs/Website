@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xylum-foundation.vercel.app/sitemap.xml

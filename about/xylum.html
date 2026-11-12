@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xylum — Xylum Foundation</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <script src="/components/Header.js" defer></script>
+  <script src="/components/Footer.js" defer></script>
+</head>
+<body>
+  <xylum-header></xylum-header>
+  <main>
+    <div style="margin-bottom: 2rem;">
+      <a href="/about.html" style="color: var(--accent-color); text-decoration: none;">&larr; Back to About</a>
+    </div>
+
+    <h1>Xylum</h1>
+    <p class="subtitle" style="font-size: 1.25rem; color: #fff;">The modern X11 display server.</p>
+
+    <h2>Why a new X11 server?</h2>
+    <p>X11 is a robust and battle-tested architecture. It allows for remote display, network transparency, and a separation between the server and the client. However, the reference implementation (X.Org) is written in C and carries decades of legacy code. Xylum was created to maintain the X11 philosophy while completely rewriting the internals in Rust.</p>
+
+    <h2>Architecture</h2>
+    <p>Xylum is built from the ground up. It parses the X11 wire protocol natively, manages its own resource database, and handles window hierarchy. By leveraging Rust's ownership model, Xylum eliminates use-after-free, double-free, and buffer overflow vulnerabilities that are common in display servers.</p>
+    
+    <h2>Rendering</h2>
+    <p>Currently, Xylum uses software rendering via <code>softbuffer</code> to present the framebuffer. Our roadmap includes a transition to Vulkan, which will allow hardware-accelerated compositing and zero-copy buffer sharing.</p>
+
+    <div style="margin-top: 4rem; display: flex; gap: 1rem;">
+      <a href="https://github.com/Xylum-Foundation/Xylum" class="btn">View on GitHub</a>
+      <a href="/releases/xylum.html" class="btn btn-secondary">View Releases</a>
+    </div>
+  </main>
+  <xylum-footer></xylum-footer>
+</body>
+</html>

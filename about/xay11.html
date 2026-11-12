@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xay11 — Xylum Foundation</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <script src="/components/Header.js" defer></script>
+  <script src="/components/Footer.js" defer></script>
+</head>
+<body>
+  <xylum-header></xylum-header>
+  <main>
+    <div style="margin-bottom: 2rem;">
+      <a href="/about.html" style="color: var(--accent-color); text-decoration: none;">&larr; Back to About</a>
+    </div>
+
+    <h1>Xay11</h1>
+    <p class="subtitle" style="font-size: 1.25rem; color: #fff;">Wayland application support for X11 Servers.</p>
+
+    <h2>Inverting the Compatibility Layer</h2>
+    <p>For years, the Linux desktop has used Xwayland to run legacy X11 applications on modern Wayland compositors. Xay11 flips this concept: it provides a compatibility layer that allows modern Wayland applications to run on top of an X11 server.</p>
+
+    <h2>Built on Proven Code</h2>
+    <p>Xay11 is not starting from scratch. It leverages the core rendering and protocol logic developed for <strong>YComp</strong> (formerly Y.Org), our experimental Wayland compositor. By reusing YComp's Rust codebase, Xay11 will bridge the gap between the two display protocols.</p>
+
+    <div style="margin-top: 4rem; display: flex; gap: 1rem;">
+      <a href="/releases/xay11.html" class="btn btn-secondary">View Releases</a>
+    </div>
+  </main>
+  <xylum-footer></xylum-footer>
+</body>
+</html>

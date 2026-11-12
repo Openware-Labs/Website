@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation — Xylum Foundation</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <script src="/components/Header.js" defer></script>
+  <script src="/components/Footer.js" defer></script>
+</head>
+<body>
+  <xylum-header></xylum-header>
+  <main>
+    <h1>Documentation</h1>
+    <p>Guides, references, and architectural overviews for our projects.</p>
+    
+    <div class="grid-container" style="margin-top: 3rem;">
+      <div class="card">
+        <h3>Xylum</h3>
+        <p>Installation guide, quick start, and architecture overview for the X11 display server.</p>
+        <a href="/documentation/xylum.html" class="btn btn-secondary" style="margin: 0; text-align: center;">Read Documentation</a>
+      </div>
+      <div class="card">
+        <h3>Xay11</h3>
+        <p>Technical documentation and API reference for the upcoming Wayland-on-X11 bridge.</p>
+        <a href="/documentation/xay11.html" class="btn btn-secondary" style="margin: 0; text-align: center;">Read Documentation</a>
+      </div>
+    </div>
+
+    <section style="margin-top: 4rem;">
+      <h2>External Resources</h2>
+      <p>For the most up-to-date technical details, refer to the repository READMEs and inline Rust documentation.</p>
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 0.5rem;"><a href="https://github.com/Xylum-Foundation/Xylum/blob/main/README.md" style="color: var(--accent-color);">Xylum README (GitHub)</a></li>
+        <li style="margin-bottom: 0.5rem;"><a href="https://github.com/Xylum-Foundation" style="color: var(--accent-color);">Xylum Foundation GitHub Organization</a></li>
+      </ul>
+    </section>
+  </main>
+  <xylum-footer></xylum-footer>
+</body>
+</html>
