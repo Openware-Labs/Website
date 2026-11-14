@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Openware Labs - Home</title>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000"
+      link="#0000EE" vlink="#551A8B">
+
+    <center>
+        <h1>Openware Labs</h1>
+        <p><b>Independent Software Development</b></p>
+        <hr width="80%">
+    </center>
+
+    <h2>Welcome</h2>
+
+    <p>
+        Welcome to the Openware Labs project server.
+    </p>
+
+    <p>
+        Openware Labs is an independent software development
+        organization focused on operating systems, software
+        experiments and development tools.
+    </p>
+
+    <h2>Projects</h2>
+
+    <ul>
+        <li><a href="./KOREX/">KOREX</a> - Experimental operating system.</li>
+        <li><a href="./VPORT/">VPORT</a> - Software project.</li>
+        <li><a href="./XDE/">XDE</a> - Software project.</li>
+    </ul>
+
+    <h2>README</h2>
+
+    <pre id="readme">Loading README.txt...</pre>
+
+    <script>
+        fetch("./README.txt")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("README.txt unavailable");
+                }
+                return response.text();
+            })
+            .then(text => {
+                document.getElementById("readme").textContent = text;
+            })
+            .catch(() => {
+                document.getElementById("readme").textContent =
+                    "Unable to load README.txt.";
+            });
+    </script>
+
+    <hr>
+
+    <center>
+        <p>
+            <a href="./index.html">Browse server directory</a>
+        </p>
+
+        <p>
+            <small>Openware Labs Server - 2026</small>
+        </p>
+    </center>
+
+</body>
+</html>
